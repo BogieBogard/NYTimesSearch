@@ -9,7 +9,8 @@ url += '?' + $.param({
   'api-key': `${apiKey}`,
   'q': `${searchTerms}`,
   'begin_date': `${beignDate}`,
-  'end_date': `${endDate}`
+  'end_date': `${endDate}`,
+  'page': '0'
 });
 $.ajax({
   url: url,
